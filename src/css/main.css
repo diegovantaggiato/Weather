@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*input box*/
+input {
+    border-radius: 5px;
+    padding: 4px;
+    background-color: rgba(225, 225, 225, 0.8);
+    border: 2px solid black !important;
+    width: 250px;
+    text-align: center;
+}
+
+#page {
+    display: flex;
+    flex-direction: row;
+    height:96vh;
+}
+
+#page > section {
+    width: 50%;
+    height: auto;
+}
+
+/*left side*/
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.left > div {
+    height: 50%;
+}
+
+.up {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.up > div {
+    position: relative;
+    top: 41vh;
+}
+
+/*right side*/
+.right > div {
+    text-align: center;
+    width: 50%;
+    height: 30%;
+}
+
+/* div temperatura*/
+
+.temperatura {
+    display: flex;
+    flex-direction: column;
+    overflow: inherit;
+    height: 40% !important; 
+    padding: 20px 20px 20px 20px !important;
+    background-color: rgba(225,225,225,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    filter: drop-shadow(2px 4px 6px black);
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+    font-family: roboto;
+}
+
+.temperatura > div {
+    position: relative;
+    margin-bottom: 7px;
+}
+
+/* immagine iniziale*/
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 4vh;
+    background-color: rgba(0,0,0,0.9);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+}
+
+.social > div{
+    margin-left: 10px;
+}
+.fa {
+    color: black;
+}
+
+.footerContainer {
+    justify-content: flex-end;
+}
+
+.footerContainer > div {
+    display: flex;
+    flex-direction: column;
+    color: rgba(225, 225, 225, 0.7);
+    height: 40%;
+    width: 50%;
+    padding: 0px 5px 0px 5px;
+    font-size: 13px;
+}
+
+.self {
+    text-align: right;
+}
+
+.self > p {
+    padding-top: 2px;
+}
+
+.fa-envelope, .fa-phone-square, .fa-instagram, .fa-facebook-official, .fa-linkedin {
+    color: rgba(225, 225, 225, 0.7);
+}
+/* button geolocalizzazione*/
+button {
+    background-color: rgba(0,0,0,0);
+    border: none !important;
+    margin-left: 4px;
+}
+
+.fa-map-marker {
+    padding: 0px 3px 0px 3px;
+    color: rgba(0, 0, 0);
+    background-color: rgba(225, 225, 225, 0.4);
+    border-radius: 8px;
+}

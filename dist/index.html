@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet"  type="text/css" href="../src/css/main.css" >
+        <link rel="stylesheet"  type="text/css" href="../src/css/mobile.css">
+        <script src="https://use.fontawesome.com/320c11f399.js"></script>
+</head>
+<body>
+    <div id="page">
+        <!--Left side-->
+        <section class="left">
+            <div class="up">
+                <div></div>
+                <div>
+                    <input id="cityName" placeholder="Inserisci il nome della tua città">
+                </div>
+                <div>
+                    <button id="geoLocation"><i class="fa fa-map-marker fa-2x"></i></button>
+                </div>
+                <div></div>
+            </div>
+
+            <div class="down"></div>
+        </section>
+
+        <!--right side-->
+        <section class="right">
+            <div>
+
+            </div>
+
+            <div class="temperatura">
+                <div>
+                    <span><i class="fa fa-university"></i> Città:</span>
+                    <span class="city"></span>
+                </div>
+                <div class="temp">
+                    <span><i class="fa fa-thermometer-half"></i> Temperatura: </span>
+                    <span class="gradi"></span>
+                </div>
+                <div class="tempMax">
+                    <span><i class="fa fa-thermometer-three-quarters"></i> Massima: </span>
+                    <span class="max"></span>
+                </div>
+                <div class="tempMin">
+                    <span><i class="fa fa-thermometer-quarter"></i> Minima: </span>
+                    <span class="min"></span>
+                </div>
+                <div class="percepiti">
+                    <span><i class="fa fa-thermometer-half"></i> Percepiti: </span>
+                    <span class="perc"></span>
+                </div>
+                <div class="description">
+                    <span><i class="fa fa-cloud"></i> Condizioni: </span>
+                    <span class="desc"></span>
+                </div>
+                <div class="umidita">
+                    <span><i class="fa fa-tint"></i> Umidità: </span>
+                    <span class="umi"></span>
+                </div>
+            </div>
+
+            <div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social">
+            <div class="link email"><a href="mailto:vantaggiatodiego@gmail.com" ><i class="fa fa-envelope fa-1x"></i></a></div>
+            <div class="link phone"><a href="tel:+393475302655" target="_blank"><i class="fa fa-phone-square fa-1x"></i></a></div>
+            <div class="link instagram"><a href="https://www.instagram.com/diego_vantaggiato/" target="_blank"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a></div>
+            <div class="link facebook"><a href="https://www.facebook.com/Diego.VantaggiatoMM93" target="_blank"><i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i></a></div>
+            <div class="link linkedin"><a href="https://www.linkedin.com/in/diego-vantaggiato-a990721b0/" target="_blank"><i class="fa fa-linkedin fa-1x"></i></a></div>
+        </div>
+        <div class="footerContainer">
+            <div class="self">
+                <p>Sito realizzato da Diego Vantaggiato</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+</html>
